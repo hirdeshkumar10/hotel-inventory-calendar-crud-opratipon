@@ -11,13 +11,13 @@ public class HotelInventoryCalendar {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(nullable = false)
+    @Column(nullable = true)
     private String available;
 
-    @Column(nullable = false)
+    @Column(nullable = true)
     private Integer sold;
 
-    @Column(nullable = false)
+    @Column(nullable = true)
     private Integer block;
 
     public HotelInventoryCalendar() {
